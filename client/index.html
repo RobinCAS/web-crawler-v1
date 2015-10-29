@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="geCrawler">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Crawler - GE CAS</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link href="views/css/custom.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="views/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- angularjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular.min.js"></script>
+    <script src="/app.js"></script>
+    <!-- jQuery -->
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Highcharts -->
+    <script type="text/javascript"  src="http://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript"  src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script type="text/javascript"  src="http://code.highcharts.com/modules/exporting.js"></script>
+  </head>
+
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="container-fluid">
+            <div class="navbar-header">
+
+                <a class="navbar-brand page-scroll" href="/">
+                    <img class="splash_nav_ge_logo" src="views/images/ge_monogram_primary_white_RGB.png" >
+                    #<span style="color:#46ad00">cas</span>cade
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#/dashboard">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://dart.grc-apps.svc.ice.ge.com/cascade.html#/catalog">Catalog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#/tools">Tools</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            <!-- BEGIN : collapse sidebar -->
+            <!-- END : collapse sidebar -->
+            <!-- collapse sidebar -->
+            <!-- Searchbar -->
+        </div>
+          <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav side-nav">
+                  <li class="active">
+                      <a href="#"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                  </li>
+
+                  <li>
+                      <a href="tables.html"><i class="fa fa-fw fa-table"></i> Workbench</a>
+                  </li>
+
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </nav>
+      <div id="page-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <section ui-view></section>
+            </div>
+          </div>
+
+        </div>
+        <!-- fluid container -->
+      </div>
+      <!-- page wrapper -->
+  </body>
+
+</html>
