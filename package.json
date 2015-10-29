@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "GE CAS Web Crawler V1",
   "scripts": {
-    "watch" : "webpack --progress --colors --watch"
+    "watch" : "webpack --progress --colors --watch",
+    "start" : "node server/app.js"
   },
   "repository": {
     "type": "git",
